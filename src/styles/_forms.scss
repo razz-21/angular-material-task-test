@@ -1,0 +1,39 @@
+.mat-form-field-appearance-outline {
+  &.mat-focused,
+  &.mat-form-field-should-float {
+    label.mat-form-field-label {
+      transform: translateY(-0.59375em) scale(0.75) !important;
+    }
+  }
+
+  &.mat-form-field-disabled {
+    .mat-form-field-outline {
+      background-color: #F5F4F5;
+      color: #D0D2D4;
+      border-radius: 6px;
+    }
+  }
+
+  .mat-form-field-outline {
+    .mat-form-field-outline-gap {
+      border-top-color: inherit !important;
+    }
+  }
+}
+
+.mat-form-field-appearance-outline {
+  .mat-form-field-infix {
+    padding: 1.25rem 0 0.75rem 0 !important;
+  }
+  .mat-form-field-suffix {
+    top: -.15em !important;
+  }
+
+}
+
+// Radio
+.mat-radio-layout-vertical {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}

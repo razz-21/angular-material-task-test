@@ -1,0 +1,40 @@
+.cursor-pointer { cursor: pointer; }
+
+// Text Color
+.text-green { color: #084734; }
+
+// Font-Weight
+.font-weight-regular { font-weight: 400; }
+.font-weight-semi-bold { font-weight: 500; }
+.font-weight-bold { font-weight: 700; }
+
+// Margins
+@each $size, $value in $margin-utilities {
+  .m-#{ $size } {
+    margin: #{ $value };
+  }
+
+  .mx-#{ $size } {
+    margin: 0 #{ $value };
+  }
+
+  .my-#{ $size } {
+    margin: #{ $value } 0;
+  }
+
+  .mt-#{ $size } {
+    margin-top: #{ $value };
+  }
+
+  .mr-#{ $size } {
+    margin-right: #{ $value };
+  }
+
+  .mb-#{ $size } {
+    margin-bottom: #{ $value };
+  }
+
+  .ml-#{ $size } {
+    margin-left: #{ $value };
+  }
+}

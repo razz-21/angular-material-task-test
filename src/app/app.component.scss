@@ -1,0 +1,38 @@
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2rem;
+  height: 100%;
+  max-width: 996px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+
+  .form-fields {
+    grid-column: span 6;
+  }
+
+  .other-components {
+    grid-column: span 6;
+  }
+}
+
+// Custom Card
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105px;
+  width: 102px;
+  background-color: #E1E7E5;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #6B7578;
+  text-align: center;
+}
