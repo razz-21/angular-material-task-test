@@ -1,7 +1,4 @@
 .main-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 2rem;
   height: 100%;
   max-width: 996px;
   margin: 4rem auto;
@@ -10,12 +7,23 @@
   border-radius: 12px;
 
   .form-fields {
-    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 1.25rem;
+    row-gap: 0.75rem;
   }
 
   .other-components {
-    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
   }
+}
+
+.mat-divider {
+  margin-bottom: 2rem;
 }
 
 // Custom Card

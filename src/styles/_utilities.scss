@@ -4,9 +4,9 @@
 .text-green { color: #084734; }
 
 // Font-Weight
-.font-weight-regular { font-weight: 400; }
-.font-weight-semi-bold { font-weight: 500; }
-.font-weight-bold { font-weight: 700; }
+.font-weight-regular { font-weight: 400 !important; }
+.font-weight-semi-bold { font-weight: 500 !important; }
+.font-weight-bold { font-weight: 700 !important; }
 
 // Margins
 @each $size, $value in $margin-utilities {
@@ -37,4 +37,9 @@
   .ml-#{ $size } {
     margin-left: #{ $value };
   }
+}
+
+// Widths
+.w-100 {
+  width: 100% !important;
 }
